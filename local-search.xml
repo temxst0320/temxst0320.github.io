@@ -8,7 +8,7 @@
     <link href="/posts/undefined.html"/>
     <url>/posts/undefined.html</url>
     
-    <content type="html"><![CDATA[<h2 id="多人游戏ELO"><a href="#多人游戏ELO" class="headerlink" title="多人游戏ELO"></a>多人游戏ELO</h2><p>$$<br>R_{i}\leftarrow R_{i}+S_{i}+k_{1}\cdot \sum_{j\neq i}\lvert S_{i}-S_{j} \rvert\cdot \left[\frac{1}{2}-\frac{e^{k_{2}\cdot R_{i}}}{e^{k_{2}\cdot R_{i}}+e^{k_{2}\cdot R_{j}}}\right]<br>$$</p>]]></content>
+    <content type="html"><![CDATA[<p>test</p><p>ntesiaro</p><h2 id="多人游戏ELO"><a href="#多人游戏ELO" class="headerlink" title="多人游戏ELO"></a>多人游戏ELO</h2><p>$$<br>R_{i}\leftarrow R_{i}+S_{i}+k_{1}\cdot \sum_{j\neq i}\lvert S_{i}-S_{j} \rvert\cdot \left[\frac{1}{2}-\frac{e^{k_{2}\cdot R_{i}}}{e^{k_{2}\cdot R_{i}}+e^{k_{2}\cdot R_{j}}}\right]<br>$$</p>]]></content>
     
     
     
