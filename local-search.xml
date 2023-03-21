@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>先手分析</title>
+    <link href="/posts/6a41ba60.html"/>
+    <url>/posts/6a41ba60.html</url>
+    
+    <content type="html"><![CDATA[<h2 id=""></h2><p>一次：8:9:10:9</p><p>两次（请客）：163:162:161:162</p><h2 id="python">python</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np<br><br>P = np.array([[<span class="hljs-number">8</span>, <span class="hljs-number">9</span>, <span class="hljs-number">10</span>, <span class="hljs-number">9</span>],<br>              [<span class="hljs-number">9</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>, <span class="hljs-number">10</span>],<br>              [<span class="hljs-number">10</span>, <span class="hljs-number">9</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>],<br>              [<span class="hljs-number">9</span>, <span class="hljs-number">10</span>, <span class="hljs-number">9</span>, <span class="hljs-number">8</span>]]) / <span class="hljs-number">36</span><br><br>pi = np.array([<span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>])<br><br><span class="hljs-built_in">print</span> (P @ pi)<br><span class="hljs-built_in">print</span> (P @ P @ pi)<br><span class="hljs-built_in">print</span> (P @ P @ P @ pi)<br><span class="hljs-built_in">print</span> (P @ P @ P @ P @ pi)<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>2023 春节</title>
     <link href="/posts/89bf2af3.html"/>
     <url>/posts/89bf2af3.html</url>
