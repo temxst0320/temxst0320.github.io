@@ -12,6 +12,12 @@
     
     
     
+    <tags>
+      
+      <tag>分析</tag>
+      
+    </tags>
+    
   </entry>
   
   
@@ -24,6 +30,12 @@
     <content type="html"><![CDATA[<p><img src="/images/2023-01-21.jpg" alt="除夕"></p><p><img src="/images/2023-01-22.jpg" alt="初一"></p>]]></content>
     
     
+    
+    <tags>
+      
+      <tag>纪实</tag>
+      
+    </tags>
     
   </entry>
   
@@ -72,17 +84,6 @@
   
   
   <entry>
-    <title>about</title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title></title>
     <link href="/"/>
     <url>/</url>
@@ -94,22 +95,22 @@
   
   
   <entry>
-    <title>排行榜</title>
+    <title>about</title>
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[<!-- | 排名 | 玩家 | 总分 | 游戏数 ||:----:|:----:|:----:|:------:||  🥇  |  辛  | +101 |   13   ||  🥈  |  己  | +50  |   14   ||  🥉  |  乙  | +20  |   8    ||  4   |  丁  | +10  |   7    ||  5   |  甲  | -20  |   8    ||  6   |  丙  | -23  |   12   ||  7   |  庚  | -66  |   8    ||  8   |  戊  | -72  |   10   | --><p>#container {<br>width: 600px;<br>height: auto;<br>}</p><p>.row {<br>position: relative;<br>display: block;<br>width: 100%;<br>height: 40px;<br>border-bottom: 1px solid #AFAFAF;<br>}</p><p>.name {<br>position: relative;<br>display: inline-block;<br>width: 75%;<br>line-height: 45px;<br>}</p><p>.score {<br>position: relative;<br>display: inline-block;<br>width: 25%;<br>}</p><div id="container">    <div class="row">        <div class="name">Player1</div><div class="score">430</div>    </div><pre><code class="hljs">&lt;div class=&quot;row&quot;&gt;    &lt;div class=&quot;name&quot;&gt;Player2&lt;/div&gt;&lt;div class=&quot;score&quot;&gt;580&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;row&quot;&gt;    &lt;div class=&quot;name&quot;&gt;Player3&lt;/div&gt;&lt;div class=&quot;score&quot;&gt;310&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;row&quot;&gt;    &lt;div class=&quot;name&quot;&gt;Player4&lt;/div&gt;&lt;div class=&quot;score&quot;&gt;640&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;row&quot;&gt;    &lt;div class=&quot;name&quot;&gt;Player5&lt;/div&gt;&lt;div class=&quot;score&quot;&gt;495&lt;/div&gt;&lt;/div&gt;</code></pre></div><!-- <div id="root"></div> -->]]></content>
+    <content type="html"><![CDATA[]]></content>
     
   </entry>
   
   
   
   <entry>
-    <title></title>
+    <title>排行榜</title>
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[#container {width: 600px;height: auto;}.row {position: relative;display: block;width: 100%;height: 40px;border-bottom: 1px solid #AFAFAF;}.name {position: relative;display: inline-block;width: 75%;line-height: 45px;}.score {position: relative;display: inline-block;width: 25%;}]]></content>
+    <content type="html"><![CDATA[<table><thead><tr><th style="text-align:center">排名</th><th style="text-align:center">玩家</th><th style="text-align:center">总分</th><th style="text-align:center">游戏数</th></tr></thead><tbody><tr><td style="text-align:center">🥇</td><td style="text-align:center">辛</td><td style="text-align:center">+101</td><td style="text-align:center">13</td></tr><tr><td style="text-align:center">🥈</td><td style="text-align:center">己</td><td style="text-align:center">+50</td><td style="text-align:center">14</td></tr><tr><td style="text-align:center">🥉</td><td style="text-align:center">乙</td><td style="text-align:center">+20</td><td style="text-align:center">8</td></tr><tr><td style="text-align:center">4</td><td style="text-align:center">丁</td><td style="text-align:center">+10</td><td style="text-align:center">7</td></tr><tr><td style="text-align:center">5</td><td style="text-align:center">甲</td><td style="text-align:center">-20</td><td style="text-align:center">8</td></tr><tr><td style="text-align:center">6</td><td style="text-align:center">丙</td><td style="text-align:center">-23</td><td style="text-align:center">12</td></tr><tr><td style="text-align:center">7</td><td style="text-align:center">庚</td><td style="text-align:center">-66</td><td style="text-align:center">8</td></tr><tr><td style="text-align:center">8</td><td style="text-align:center">戊</td><td style="text-align:center">-72</td><td style="text-align:center">10</td></tr></tbody></table>]]></content>
     
   </entry>
   
@@ -121,6 +122,17 @@
     <url>/</url>
     
     <content type="html"><![CDATA[import React, { useRef } from "https://cdn.skypack.dev/react@17.0.1";import ReactDOM from "https://cdn.skypack.dev/react-dom@17.0.1";const App = () => { const dados = [  {    id: 1,    name: 'Laura',    image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',    level: 16,    xp: 100,    coins: 500,    love: 6,    beacons: 2,    resources: 70,  },  {    id: 1,    name: 'Laura',    image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',    level: 16,    xp: 100,    coins: 500,    love: 6,    beacons: 2,    resources: 70,  },  {    id: 1,    name: 'Laura',    image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',    level: 16,    xp: 100,    coins: 500,    love: 6,    beacons: 2,    resources: 70,  },  {    id: 1,    name: 'Laura',    image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',    level: 16,    xp: 100,    coins: 500,    love: 6,    beacons: 2,    resources: 70,  },  {    id: 1,    name: 'Laura',    image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',    level: 16,    xp: 100,    coins: 500,    love: 6,    beacons: 2,    resources: 70,  },  {    id: 1,    name: 'Laura',    image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',    level: 16,    xp: 100,    coins: 500,    love: 6,    beacons: 2,    resources: 70,  },  {    id: 1,    name: 'Laura',    image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',    level: 16,    xp: 100,    coins: 500,    love: 6,    beacons: 2,    resources: 70,  },  {    id: 1,    name: 'Laura',    image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',    level: 16,    xp: 100,    coins: 500,    love: 6,    beacons: 2,    resources: 70,  },  {    id: 1,    name: 'Laura',    image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',    level: 16,    xp: 100,    coins: 500,    love: 6,    beacons: 2,    resources: 70,  },  {    id: 1,    name: 'Laura',    image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',    level: 16,    xp: 100,    coins: 500,    love: 6,    beacons: 2,    resources: 70,  },  {    id: 1,    name: 'Laura',    image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',    level: 16,    xp: 100,    coins: 500,    love: 6,    beacons: 2,    resources: 70,  },  {    id: 1,    name: 'Laura',    image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',    level: 16,    xp: 100,    coins: 500,    love: 6,    beacons: 2,    resources: 70,  },  {    id: 1,    name: 'Laura',    image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',    level: 16,    xp: 100,    coins: 500,    love: 6,    beacons: 2,    resources: 70,  },  {    id: 1,    name: 'Laura',    image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',    level: 16,    xp: 100,    coins: 500,    love: 6,    beacons: 2,    resources: 70,  },  {    id: 1,    name: 'Laura',    image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',    level: 16,    xp: 100,    coins: 500,    love: 6,    beacons: 2,    resources: 70,  },  {    id: 1,    name: 'Laura',    image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',    level: 16,    xp: 100,    coins: 500,    love: 6,    beacons: 2,    resources: 70,  },  {    id: 1,    name: 'Laura',    image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',    level: 16,    xp: 100,    coins: 500,    love: 6,    beacons: 2,    resources: 70,  },  {    id: 1,    name: 'Laura',    image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',    level: 16,    xp: 100,    coins: 500,    love: 6,    beacons: 2,    resources: 70,  },];  return (    <div className="container">      <div className="topLeadersList">        {dados.map((leader, index) => (          <div className="leader" key={leader.id}>            {index + 1 <= 3 && (              <div className="containerImage">                <img className="image" loading="lazy" src={leader.image} />                <div className="crown">                  <svg                    id="crown1"                    fill="#0f74b5"                    data-name="Layer 1"                    xmlns="http://www.w3.org/2000/svg"                    viewBox="0 0 100 50"                  >                    <polygon                      className="cls-1"                      points="12.7 50 87.5 50 100 0 75 25 50 0 25.6 25 0 0 12.7 50"                    />                  </svg>                </div>                <div className="leaderName">{leader.name}</div>              </div>            )}          </div>        ))}      </div>      <div className="playerslist">        <div className="table">            <div>#</div>                    <div>Name</div>                              <div>LVL</div>                      <div>XP</div>                      <div>              Coins            </div>                      <div>              Likes            </div>                      <div>              Pass            </div>                      <div>              Resources            </div>                  </div>        <div className="list">          {dados.map((leader, index) => (            <div className="player" key={leader.id}>              <span> {index + 1}</span>              <div className="user">                <img className="image" src={leader.image} />                <span> {leader.name} </span>              </div>              <span> {leader.level} </span>              <span> {leader.xp} </span>              <span> {leader.coins} </span>              <span> {leader.love} </span>              <span> {leader.beacons} </span>              <span> {leader.resources} </span>            </div>          ))}        </div>        </div>      </div>);}ReactDOM.render(<App />,document.getElementById("root"))]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[#container {width: 600px;height: auto;}.row {position: relative;display: block;width: 100%;height: 40px;border-bottom: 1px solid #AFAFAF;}.name {position: relative;display: inline-block;width: 75%;line-height: 45px;}.score {position: relative;display: inline-block;width: 25%;}]]></content>
     
   </entry>
   
