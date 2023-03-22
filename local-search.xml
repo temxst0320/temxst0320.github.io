@@ -84,11 +84,11 @@
   
   
   <entry>
-    <title></title>
+    <title>about</title>
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[#container {width: 600px;height: auto;}.row {position: relative;display: block;width: 100%;height: 40px;border-bottom: 1px solid #AFAFAF;}.name {position: relative;display: inline-block;width: 75%;line-height: 45px;}.score {position: relative;display: inline-block;width: 25%;}]]></content>
+    <content type="html"><![CDATA[]]></content>
     
   </entry>
   
@@ -99,7 +99,7 @@
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[<!-- | 排名 | 玩家 | 总分 | 游戏数 ||:----:|:----:|:----:|:------:||  🥇  |  辛  | +101 |   13   ||  🥈  |  己  | +50  |   14   ||  🥉  |  乙  | +20  |   8    ||  4   |  丁  | +10  |   7    ||  5   |  甲  | -20  |   8    ||  6   |  丙  | -23  |   12   ||  7   |  庚  | -66  |   8    ||  8   |  戊  | -72  |   10   | --><style>table {margin-left:auto;margin-right:auto;width:80%}th {text-align:center;padding:7px;border-bottom:solid 1px}td {text-align:center;padding:7px;border-top:solid 1px}img {width:50px;border-radius:50%}</style><table>  <thead>    <tr>      <th>排名</th>      <th>选手</th>      <th>得分</th>      <th>对局数</>    </tr>  </thead>  <tbody>    <tr>      <td>🥇</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 辛</td>      <td>+101</td>      <td>13</td>    </tr>    <tr>      <td>🥈</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 己</td>      <td>+50</td>      <td>14</td>    </tr>    <tr>      <td>🥉</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 乙</td>      <td>+20</td>      <td>8</td>    </tr>    <tr>      <td>4</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 丁</td>      <td>+10</td>      <td>7</td>    </tr>    <tr>      <td>5</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 甲</td>      <td>-20</td>      <td>8</td>    </tr>    <tr>      <td>6</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 丙</td>      <td>-23</td>      <td>12</td>    </tr>    <tr>      <td>7</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 庚</td>      <td>-66</td>      <td>8</td>    </tr>    <tr>      <td>8</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 戊</td>      <td>-72</td>      <td>10</td>    </tr>  </tbody></table>]]></content>
+    <content type="html"><![CDATA[<!-- | 排名 | 玩家 | 总分 | 游戏数 ||:----:|:----:|:----:|:------:||  🥇  |  辛  | +101 |   13   ||  🥈  |  己  | +50  |   14   ||  🥉  |  乙  | +20  |   8    ||  4   |  丁  | +10  |   7    ||  5   |  甲  | -20  |   8    ||  6   |  丙  | -23  |   12   ||  7   |  庚  | -66  |   8    ||  8   |  戊  | -72  |   10   | --><style>table {margin-left:auto;margin-right:auto;width:100%}th {text-align:center;padding:7px;border-bottom:solid 1px}td {text-align:center;padding:7px;border-top:solid 1px}img {width:50px;border-radius:50%}</style><table>  <thead>    <tr>      <th>排名</th>      <th>选手</th>      <th>得分</th>      <th>对局数</>    </tr>  </thead>  <tbody>    <tr>      <td>🥇</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 辛</td>      <td>+101</td>      <td>13</td>    </tr>    <tr>      <td>🥈</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 己</td>      <td>+50</td>      <td>14</td>    </tr>    <tr>      <td>🥉</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 乙</td>      <td>+20</td>      <td>8</td>    </tr>    <tr>      <td>4</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 丁</td>      <td>+10</td>      <td>7</td>    </tr>    <tr>      <td>5</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 甲</td>      <td>-20</td>      <td>8</td>    </tr>    <tr>      <td>6</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 丙</td>      <td>-23</td>      <td>12</td>    </tr>    <tr>      <td>7</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 庚</td>      <td>-66</td>      <td>8</td>    </tr>    <tr>      <td>8</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 戊</td>      <td>-72</td>      <td>10</td>    </tr>  </tbody></table>]]></content>
     
   </entry>
   
@@ -117,11 +117,11 @@
   
   
   <entry>
-    <title>about</title>
+    <title></title>
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[#container {width: 600px;height: auto;}.row {position: relative;display: block;width: 100%;height: 40px;border-bottom: 1px solid #AFAFAF;}.name {position: relative;display: inline-block;width: 75%;line-height: 45px;}.score {position: relative;display: inline-block;width: 25%;}]]></content>
     
   </entry>
   
