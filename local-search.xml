@@ -46,7 +46,7 @@
     <link href="/posts/c4a68dd9.html"/>
     <url>/posts/c4a68dd9.html</url>
     
-    <content type="html"><![CDATA[<h2 id="计分表-0-1（2023-03-21）">计分表 0.1（2023-03-21）</h2><style>.tg  {margin-left:auto;margin-right:auto;}.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;  overflow:hidden;padding:7px;word-break:normal;}.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;  font-weight:normal;overflow:hidden;padding:7px;word-break:normal;}.tg .tg-wa1i{font-weight:bold;text-align:center;vertical-align:middle; padding-left: 20px; padding-right: 20px;}.tg .tg-wa2i{font-weight:bold;text-align:center;vertical-align:middle; padding-left: 10px; padding-right: 10px}</style><table class="tg"><thead>  <tr>    <th class="tg-wa1i" colspan="4">2023</th>    <th class="tg-wa2i" colspan="2">03</th>    <th class="tg-wa2i" colspan="2">21</th>  </tr></thead><tbody>  <tr>    <td class="tg-wa1i" colspan="4">13:16</td>    <td class="tg-wa1i" colspan="4">14:02</td>  </tr>  <tr>    <td class="tg-wa1i" colspan="4">XXX</td>    <td class="tg-wa2i" colspan="2">+12</td>    <td class="tg-wa2i" colspan="2" rowspan="4">正<br>正<br>正<br>一</td>  </tr>  <tr>    <td class="tg-wa1i" colspan="4">XXX</td>    <td class="tg-wa2i" colspan="2">-9</td>  </tr>  <tr>    <td class="tg-wa1i" colspan="4">XXX</td>    <td class="tg-wa2i" colspan="2">-20</td>  </tr>  <tr>    <td class="tg-wa1i" colspan="4">XXX</td>    <td class="tg-wa2i" colspan="2">+17</td>  </tr></tbody></table>]]></content>
+    <content type="html"><![CDATA[<h2 id="计分表-0-1（2023-03-21）">计分表 0.1（2023-03-21）</h2><style>.tg  {margin-left:auto;margin-right:auto;}.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;  overflow:hidden;padding:7px;word-break:normal;}.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;  font-weight:normal;overflow:hidden;padding:7px;word-break:normal;}.tg .tg-wa1i{font-weight:bold;text-align:center;vertical-align:middle; padding-left: 20px; padding-right: 20px;}.tg .tg-wa2i{font-weight:bold;text-align:center;vertical-align:middle; padding-left: 10px; padding-right: 10px}</style><table class="tg"><thead>  <tr>    <th class="tg-wa1i" colspan="4">2023</th>    <th class="tg-wa2i" colspan="2" contenteditable="true">03</th>    <th class="tg-wa2i" colspan="2" contenteditable="true">21</th>  </tr></thead><tbody>  <tr>    <td class="tg-wa1i" colspan="4">13:16</td>    <td class="tg-wa1i" colspan="4">14:02</td>  </tr>  <tr>    <td class="tg-wa1i" colspan="4">XXX</td>    <td class="tg-wa2i" colspan="2">+12</td>    <td class="tg-wa2i" colspan="2" rowspan="4">正<br>正<br>正<br>一</td>  </tr>  <tr>    <td class="tg-wa1i" colspan="4">XXX</td>    <td class="tg-wa2i" colspan="2">-9</td>  </tr>  <tr>    <td class="tg-wa1i" colspan="4">XXX</td>    <td class="tg-wa2i" colspan="2">-20</td>  </tr>  <tr>    <td class="tg-wa1i" colspan="4">XXX</td>    <td class="tg-wa2i" colspan="2">+17</td>  </tr></tbody></table>]]></content>
     
     
     
@@ -80,17 +80,6 @@
   
   
   
-  
-  
-  
-  <entry>
-    <title></title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[/* .table {    margin-left: auto;    margin-right: auto;} */]]></content>
-    
-  </entry>
   
   
   
@@ -132,7 +121,29 @@
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[<!-- | 排名 | 玩家 | 总分 | 游戏数 ||:----:|:----:|:----:|:------:||  🥇  |  辛  | +101 |   13   ||  🥈  |  己  | +50  |   14   ||  🥉  |  乙  | +20  |   8    ||  4   |  丁  | +10  |   7    ||  5   |  甲  | -20  |   8    ||  6   |  丙  | -23  |   12   ||  7   |  庚  | -66  |   8    ||  8   |  戊  | -72  |   10   | --><p>时间范围：</p><style>table {margin-left:auto;margin-right:auto;width:100%}th {text-align:center;padding:7px}td {text-align:center;padding:7px;border-top:solid 1px;font-family:monospace}img {width:50px;border-radius:50%}</style><table>  <thead>    <tr>      <th>排名</th>      <th>玩家</th>      <th>总得分</th>      <th>游戏数</>    </tr>  </thead>  <tbody>    <tr>      <td>🥇</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 辛</td>      <td>+101</td>      <td>13</td>    </tr>    <tr>      <td>🥈</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 己</td>      <td>+50</td>      <td>14</td>    </tr>    <tr>      <td>🥉</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 乙</td>      <td>+20</td>      <td>8</td>    </tr>    <tr>      <td>4</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 丁</td>      <td>+10</td>      <td>7</td>    </tr>    <tr>      <td>5</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 甲</td>      <td>-20</td>      <td>8</td>    </tr>    <tr>      <td>6</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 丙</td>      <td>-23</td>      <td>12</td>    </tr>    <tr>      <td>7</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 庚</td>      <td>-66</td>      <td>8</td>    </tr>    <tr>      <td>8</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 戊</td>      <td>-72</td>      <td>10</td>    </tr>  </tbody></table>]]></content>
+    <content type="html"><![CDATA[<!-- | 排名 | 玩家 | 总分 | 游戏数 ||:----:|:----:|:----:|:------:||  🥇  |  辛  | +101 |   13   ||  🥈  |  己  | +50  |   14   ||  🥉  |  乙  | +20  |   8    ||  4   |  丁  | +10  |   7    ||  5   |  甲  | -20  |   8    ||  6   |  丙  | -23  |   12   ||  7   |  庚  | -66  |   8    ||  8   |  戊  | -72  |   10   | --><p>时间范围：</p><style>table {margin-left:auto;margin-right:auto;width:100%}th {text-align:center;padding:7px}td {contenteditable:true;text-align:center;padding:7px;border-top:solid 1px;font-family:monospace}img {width:50px;border-radius:50%}</style><table>  <thead>    <tr>      <th>排名</th>      <th>玩家</th>      <th>总得分</th>      <th>游戏数</>    </tr>  </thead>  <tbody>    <tr>      <td>🥇</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 辛</td>      <td>+101</td>      <td>13</td>    </tr>    <tr>      <td>🥈</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 己</td>      <td>+50</td>      <td>14</td>    </tr>    <tr>      <td>🥉</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 乙</td>      <td>+20</td>      <td>8</td>    </tr>    <tr>      <td>4</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 丁</td>      <td>+10</td>      <td>7</td>    </tr>    <tr>      <td>5</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 甲</td>      <td>-20</td>      <td>8</td>    </tr>    <tr>      <td>6</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 丙</td>      <td>-23</td>      <td>12</td>    </tr>    <tr>      <td>7</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 庚</td>      <td>-66</td>      <td>8</td>    </tr>    <tr>      <td>8</td>      <td><img src="../images/Donald_Trump_NYMA.jpg">&nbsp 戊</td>      <td>-72</td>      <td>10</td>    </tr>  </tbody></table>]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[/* .table {    margin-left: auto;    margin-right: auto;} */]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>计分工具</title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[<style>.tg  {margin-left:auto;margin-right:auto;}.tg td{border-color:black;border-style:solid;border-width:1px;font-family:monospace;font-size:14px;  overflow:hidden;padding:7px;word-break:normal}.tg th{border-color:black;border-style:solid;border-width:1px;font-family:monospace;font-size:14px;  font-weight:normal;overflow:hidden;padding:7px;word-break:normal}.tg .tg-wa1i{font-weight:bold;text-align:center;vertical-align:middle; padding-left: 20px; padding-right: 20px;}.tg .tg-wa2i{font-weight:bold;text-align:center;vertical-align:middle; padding-left: 10px; padding-right: 10px}</style><table class="tg" contenteditable="true"><thead>  <tr>    <th class="tg-wa1i" colspan="4" width=50%>2023</th>    <th class="tg-wa2i" colspan="2" width=25%>03</th>    <th class="tg-wa2i" colspan="2" widtn=25%>21</th>  </tr></thead><tbody>  <tr>    <td class="tg-wa1i" colspan="4">13:16</td>    <td class="tg-wa1i" colspan="4">14:02</td>  </tr>  <tr>    <td class="tg-wa1i" colspan="4">XXX</td>    <td class="tg-wa2i" colspan="2">+12</td>    <td class="tg-wa2i" colspan="2" rowspan="4">正<br>正<br>正<br>一</td>  </tr>  <tr>    <td class="tg-wa1i" colspan="4">XXX</td>    <td class="tg-wa2i" colspan="2">-9</td>  </tr>  <tr>    <td class="tg-wa1i" colspan="4">XXX</td>    <td class="tg-wa2i" colspan="2">-20</td>  </tr>  <tr>    <td class="tg-wa1i" colspan="4">XXX</td>    <td class="tg-wa2i" colspan="2">+17</td>  </tr></tbody></table>]]></content>
     
   </entry>
   
