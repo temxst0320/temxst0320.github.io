@@ -126,22 +126,11 @@
   
   
   <entry>
-    <title>Donald Trump</title>
+    <title>排行榜</title>
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[<div style="width: 150px; height: 150px; border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; margin: 0 auto;">      <img src="/images/Donald_Trump_NYMA.jpg" alt="person1" style="height: auto; display: block;"></div><div style="text-align: center; margin-top: 20px;"><p>姓名：Donald Trump</p><p>年龄：78</p><p>籍贯：New York City, New York, U.S.</p></div><div id="myChart" style="width: 100%;height:400px;"></div><script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script><script>var myChart = echarts.init(document.getElementById('myChart'));var option = {    xAxis: {        type: 'category',        data: ['1', '2', '3', '4', '5', '6', '7']    },    yAxis: {        type: 'value'    },    tooltip: {        trigger: 'axis'    },        grid: {        left: '3%',        right: '4%',        bottom: '3%',        containLabel: true    },    series: [{        data: [13, -10, -3, -14, 15, 30, 24],        type: 'line',        itemStyle: {            normal: {                color: '#00BFFF',                lineStyle: {                    color: '#00BFFF',                    width: 3                }            }        },        lineStyle: {            normal: {                width: 3,            }        },    }]};myChart.setOption(option);</script>]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title></title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[/* .table {    margin-left: auto;    margin-right: auto;} */]]></content>
+    <content type="html"><![CDATA[<p>时间范围：</p><style>table {text-align:center;width:100%}th {padding:10px}td {padding:7px;border-top:solid 1px;font-family:monospace}img {width:40px;border-radius:50%}#leaderboard td:nth-child(3) {text-align: left;}</style><script>function sortTable(n) {  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;  table = document.getElementById("leaderboard");  switching = true;  dir = "asc";  while (switching) {    switching = false;    rows = table.rows;    for (i = 1; i < (rows.length - 1); i++) {      shouldSwitch = false;      x = rows[i].getElementsByTagName("td")[n];      y = rows[i + 1].getElementsByTagName("td")[n];      if (dir == "asc") {        if (Number(getValue(x)) > Number(getValue(y))) {          shouldSwitch = true;          break;        }      } else if (dir == "desc") {        if (Number(getValue(x)) < Number(getValue(y))) {          shouldSwitch = true;          break;        }      }    }    if (shouldSwitch) {      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);      switching = true;      switchcount ++;    } else {      if (switchcount == 0 && dir == "asc") {        dir = "desc";        switching = true;      }    }  }}function getValue(cell) {  var value = cell.innerHTML;  var match = value.match(/(-?\d+)/);  if (match) {    return match[1];  } else {    return 0;  }}</script><table id="leaderboard">  <thead>    <tr>      <th>排名</th>      <th>玩家</th>      <th> </th>      <th onclick="sortTable(3)" style="cursor:pointer">总得分 ▲▼</th>      <th onclick="sortTable(4)" style="cursor:pointer">游戏数 ▲▼</th>    </tr>  </thead>  <tbody>    <tr>      <td>🥇</td>      <td><img src="../images/Donald_Trump_NYMA.jpg"></td>      <td><a href="../person1/">辛辛辛</a></td>      <td><span style="color:red">+101</span></td>      <td>13</td>    </tr>    <tr>      <td>🥈</td>      <td><img src="../images/Donald_Trump_NYMA.jpg"></td>      <td><a href="../person1/">己己</a></td>      <td><span style="color:red">+50</span></td>      <td>14</td>    </tr>    <tr>      <td>🥉</td>      <td><img src="../images/Donald_Trump_NYMA.jpg"></td>      <td><a href="../person1/">乙乙乙</a></td>      <td><span style="color:red">+20</span></td>      <td>8</td>    </tr>    <tr>      <td>4</td>      <td><img src="../images/Donald_Trump_NYMA.jpg"></td>      <td><a href="../person1/">丁丁丁</a></td>      <td><span style="color:red">+10</span></td>      <td>7</td>    </tr>    <tr>      <td>5</td>      <td><img src="../images/Donald_Trump_NYMA.jpg"></td>      <td><a href="../person1/">甲甲甲</a></td>      <td><span style="color:green">-20</span></td>      <td>8</td>    </tr>    <tr>      <td>6</td>      <td><img src="../images/Donald_Trump_NYMA.jpg"></td>      <td><a href="../person1/">丙丙</a></td>      <td><span style="color:green">-23</span></td>      <td>12</td>    </tr>    <tr>      <td>7</td>      <td><img src="../images/Donald_Trump_NYMA.jpg"></td>      <td><a href="../person1/">庚庚庚</a></td>      <td><span style="color:green">-66</span></td>      <td>8</td>    </tr>    <tr>      <td>8</td>      <td><img src="../images/Donald_Trump_NYMA.jpg"></td>      <td><a href="../person1/">戊戊戊</a></td>      <td><span style="color:green">-72</span></td>      <td>10</td>    </tr>  </tbody></table>]]></content>
     
   </entry>
   
@@ -159,18 +148,7 @@
   
   
   <entry>
-    <title>排行榜</title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[<p>时间范围：</p><style>table {text-align:center;width:100%}th {padding:10px}td {padding:7px;border-top:solid 1px;font-family:monospace}img {width:40px;border-radius:50%}</style><script>function sortTable(n) {  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;  table = document.getElementById("leaderboard");  switching = true;  dir = "asc";  while (switching) {    switching = false;    rows = table.rows;    for (i = 1; i < (rows.length - 1); i++) {      shouldSwitch = false;      x = rows[i].getElementsByTagName("td")[n];      y = rows[i + 1].getElementsByTagName("td")[n];      if (dir == "asc") {        if (Number(getValue(x)) > Number(getValue(y))) {          shouldSwitch = true;          break;        }      } else if (dir == "desc") {        if (Number(getValue(x)) < Number(getValue(y))) {          shouldSwitch = true;          break;        }      }    }    if (shouldSwitch) {      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);      switching = true;      switchcount ++;    } else {      if (switchcount == 0 && dir == "asc") {        dir = "desc";        switching = true;      }    }  }}function getValue(cell) {  var value = cell.innerHTML;  var match = value.match(/(-?\d+)/);  if (match) {    return match[1];  } else {    return 0;  }}</script><table id="leaderboard">  <thead>    <tr>      <th>排名</th>      <th>玩家</th>      <th onclick="sortTable(2)" style="cursor:pointer">总得分 ▲▼</th>      <th onclick="sortTable(3)" style="cursor:pointer">游戏数 ▲▼</th>    </tr>  </thead>  <tbody>    <tr>      <td>🥇</td>      <td><a href="../person1/"><img src="../images/Donald_Trump_NYMA.jpg"></a><a href="../person1/"> 辛辛辛</a></td>      <td><span style="color:red">+101</span></td>      <td>13</td>    </tr>    <tr>      <td>🥈</td>      <td><a href="../person1/"><img src="../images/Donald_Trump_NYMA.jpg"></a><a href="../person1/"> 己己己</a></td>      <td><span style="color:red">+50</span></td>      <td>14</td>    </tr>    <tr>      <td>🥉</td>      <td><a href="../person1/"><img src="../images/Donald_Trump_NYMA.jpg"></a><a href="../person1/"> 乙乙乙</a></td>      <td><span style="color:red">+20</span></td>      <td>8</td>    </tr>    <tr>      <td>4</td>      <td><a href="../person1/"><img src="../images/Donald_Trump_NYMA.jpg"></a><a href="../person1/"> 丁丁丁</a></td>      <td><span style="color:red">+10</span></td>      <td>7</td>    </tr>    <tr>      <td>5</td>      <td><a href="../person1/"><img src="../images/Donald_Trump_NYMA.jpg"></a><a href="../person1/"> 甲甲甲</a></td>      <td><span style="color:green">-20</span></td>      <td>8</td>    </tr>    <tr>      <td>6</td>      <td><a href="../person1/"><img src="../images/Donald_Trump_NYMA.jpg"></a><a href="../person1/"> 丙丙</a></td>      <td><span style="color:green">-23</span></td>      <td>12</td>    </tr>    <tr>      <td>7</td>      <td><a href="../person1/"><img src="../images/Donald_Trump_NYMA.jpg"></a><a href="../person1/"> 庚庚庚</a></td>      <td><span style="color:green">-66</span></td>      <td>8</td>    </tr>    <tr>      <td>8</td>      <td><a href="../person1/"><img src="../images/Donald_Trump_NYMA.jpg"></a><a href="../person1/"> 戊戊戊</a></td>      <td><span style="color:green">-72</span></td>      <td>10</td>    </tr>  </tbody></table>]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>计分工具</title>
+    <title>计分表</title>
     <link href="/"/>
     <url>/</url>
     
@@ -181,11 +159,33 @@
   
   
   <entry>
+    <title>Donald Trump</title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[<div style="width: 150px; height: 150px; border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; margin: 0 auto;">      <img src="/images/Donald_Trump_NYMA.jpg" alt="person1" style="height: auto; display: block;"></div><div style="text-align: center; margin-top: 20px;"><p>姓名：Donald Trump</p><p>年龄：78</p><p>籍贯：New York City, New York, U.S.</p></div><div id="myChart" style="width: 100%;height:400px;"></div><script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script><script>var myChart = echarts.init(document.getElementById('myChart'));var option = {    xAxis: {        type: 'category',        data: ['1', '2', '3', '4', '5', '6', '7']    },    yAxis: {        type: 'value'    },    tooltip: {        trigger: 'axis'    },        grid: {        left: '3%',        right: '4%',        bottom: '3%',        containLabel: true    },    series: [{        data: [13, -10, -3, -14, 15, 30, 24],        type: 'line',        itemStyle: {            normal: {                color: '#00BFFF',                lineStyle: {                    color: '#00BFFF',                    width: 3                }            }        },        lineStyle: {            normal: {                width: 3,            }        },    }]};myChart.setOption(option);</script>]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>日程</title>
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[<div id="countdown" style="text-align: center; margin-bottom: 20px; font-size: 3vw;"></div><script>    var countDownDate = new Date("2023-04-29 08:00:00").getTime();    var x = setInterval(function() {        var now = new Date().getTime();        var distance = countDownDate - now;        var days = Math.floor(distance / (1000 * 60 * 60 * 24));        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));        var seconds = Math.floor((distance % (1000 * 60)) / 1000);        hours = ("0" + hours).slice(-2);        minutes = ("0" + minutes).slice(-2);        seconds = ("0" + seconds).slice(-2);        document.getElementById("countdown").innerHTML = "距离五一假期：" + days + "天 " + hours + "时 " + minutes + "分 " + seconds + "秒";        if (distance < 0) {            clearInterval(x);            document.getElementById("countdown").innerHTML = "倒计时已结束";        }    }, 1000);</script><script>(function(d, s, id) {    if (d.getElementById(id)) {        if (window.__TOMORROW__) {            window.__TOMORROW__.renderWidget();        }        return;    }    const fjs = d.getElementsByTagName(s)[0];    const js = d.createElement(s);    js.id = id;    js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";    fjs.parentNode.insertBefore(js, fjs);})(document, 'script', 'tomorrow-sdk');</script><div class="tomorrow"    data-location-id="019762"    data-language="ZH"    data-unit-system="METRIC"    data-skin="light"    data-widget-type="upcoming"    style="padding-bottom:22px;position:relative;"></div><div id="he-plugin-standard"></div><script>WIDGET = {  "CONFIG": {    "layout": "2",    "width": 230,    "height": 270,    "background": "1",    "dataColor": "FFFFFF",    "language": "zh",    "city": "CN101240615",    "key": "bdb88e5e2f13400bbd4dda907d00a55f"  }}</script><script src="https://widget.qweather.net/standard/static/js/he-standard-common.js?v=2.0"></script>]]></content>
+    <content type="html"><![CDATA[<div id="countdown" style="text-align: center; margin-bottom: 10px; font-size: 4vw;"></div><script>    var countDownDate = new Date("2023-04-29 08:00:00").getTime();    var x = setInterval(function() {        var now = new Date().getTime();        var distance = countDownDate - now;        var days = Math.floor(distance / (1000 * 60 * 60 * 24));        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));        var seconds = Math.floor((distance % (1000 * 60)) / 1000);        hours = ("0" + hours).slice(-2);        minutes = ("0" + minutes).slice(-2);        seconds = ("0" + seconds).slice(-2);        document.getElementById("countdown").innerHTML = "距离五一假期：" + days + "天" + hours + "时" + minutes + "分" + seconds + "秒";        if (distance < 0) {            clearInterval(x);            document.getElementById("countdown").innerHTML = "假期开始";        }    }, 1000);</script><center><div id="he-plugin-standard"></div></center><script>WIDGET = {  "CONFIG": {    "layout": "2",    "width": 230,    "height": 270,    "background": "1",    "dataColor": "FFFFFF",    "language": "zh",    "city": "CN101240615",    "key": "bdb88e5e2f13400bbd4dda907d00a55f"  }}</script><script src="https://widget.qweather.net/standard/static/js/he-standard-common.js?v=2.0"></script>]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[/* .table {    margin-left: auto;    margin-right: auto;} */]]></content>
     
   </entry>
   

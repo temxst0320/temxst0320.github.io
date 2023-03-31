@@ -24,7 +24,7 @@
 <meta property="og:description" content="var countDownDate &#x3D; new Date(&quot;2023-04-29 08:00:00&quot;).getTime();      var x &#x3D; setInterval(function() {         var now &#x3D; new Date().getTime();         var distance &#x3D; countDownDate - now;">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-03-30T13:02:42.000Z">
-<meta property="article:modified_time" content="2023-03-30T19:03:45.519Z">
+<meta property="article:modified_time" content="2023-03-31T07:13:48.346Z">
 <meta property="article:author" content="MiXiang">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -211,7 +211,7 @@
                   
                   
                   
-                  <a class="dropdown-item" href="/%E8%AE%A1%E5%88%86%E5%B7%A5%E5%85%B7/">
+                  <a class="dropdown-item" href="/%E8%AE%A1%E5%88%86%E8%A1%A8/">
                     <i class="iconfont icon-gf-table"></i>
                     <span>计分表</span>
                   </a>
@@ -289,7 +289,7 @@
                 
 
 <article class="page-content">
-  <div id="countdown" style="text-align: center; margin-bottom: 20px; font-size: 3vw;"></div>
+  <div id="countdown" style="text-align: center; margin-bottom: 10px; font-size: 4vw;"></div>
 <script>
     var countDownDate = new Date("2023-04-29 08:00:00").getTime();
 
@@ -306,39 +306,15 @@
         minutes = ("0" + minutes).slice(-2);
         seconds = ("0" + seconds).slice(-2);
 
-        document.getElementById("countdown").innerHTML = "距离五一假期：" + days + "天 " + hours + "时 " + minutes + "分 " + seconds + "秒";
+        document.getElementById("countdown").innerHTML = "距离五一假期：" + days + "天" + hours + "时" + minutes + "分" + seconds + "秒";
 
         if (distance < 0) {
             clearInterval(x);
-            document.getElementById("countdown").innerHTML = "倒计时已结束";
+            document.getElementById("countdown").innerHTML = "假期开始";
         }
     }, 1000);
 </script>
-<script>
-(function(d, s, id) {
-    if (d.getElementById(id)) {
-        if (window.__TOMORROW__) {
-            window.__TOMORROW__.renderWidget();
-        }
-        return;
-    }
-    const fjs = d.getElementsByTagName(s)[0];
-    const js = d.createElement(s);
-    js.id = id;
-    js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
-
-    fjs.parentNode.insertBefore(js, fjs);
-})(document, 'script', 'tomorrow-sdk');
-</script>
-<div class="tomorrow"
-    data-location-id="019762"
-    data-language="ZH"
-    data-unit-system="METRIC"
-    data-skin="light"
-    data-widget-type="upcoming"
-    style="padding-bottom:22px;position:relative;">
-</div>
-<div id="he-plugin-standard"></div>
+<center><div id="he-plugin-standard"></div></center>
 <script>
 WIDGET = {
   "CONFIG": {
