@@ -126,33 +126,11 @@
   
   
   <entry>
-    <title></title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[/* .table {    margin-left: auto;    margin-right: auto;} */]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>小游戏</title>
     <link href="/"/>
     <url>/</url>
     
     <content type="html"><![CDATA[<!-- [examples/index.html at main · 5minute/examples](https://github.com/5minute/examples/blob/main/2048/index.html) --><style>    #field {    border: 1px solid black;    }    .cell {    border: 1px solid black;    text-align: center;    width: 80px;    height: 80px;    color: white;    }</style><table id="field" align="center"></table><script>var size = 4;var htmlElements;var cells;function createField() {if (htmlElements) {    return;}htmlElements = [];var table = document.getElementById('field');for (var y = 0; y < size; y++) {    var tr = document.createElement('tr');    var trElements = [];    for (var x = 0; x < size; x++) {    var td = document.createElement('td');    td.setAttribute('class', 'cell');    tr.appendChild(td);    trElements.push(td);    }    htmlElements.push(trElements);    table.appendChild(tr);}}function createCells() {cells = [];for (var y = 0; y < size; y++) {    cells.push(new Array(size).fill(0));}}function generateInEmptyCell() {var x, y;do {    x = Math.floor(Math.random() * size), y = Math.floor(Math.random() * size);    if (cells[y][x] == 0) {    cells[y][x] = Math.random() >= 0.9 ? 4 : 2;    break;    }} while (true);}function draw() {for (var y = 0; y < size; y++) {    for (var x = 0; x < size; x++) {    var td = htmlElements[y][x];    var v = cells[y][x];    td.innerHTML = v == 0 ? '' : String(v);    if (v == 0) {        td.setAttribute('style', 'background-color: white');    } else {        var h = 20 + 24 * Math.log2(2048 / v);        td.setAttribute('style', 'background-color: hsl(' + h + ', 100%, 50%)');    }    }}}function slide(array, size) {// [0, 2, 2, 2] => [2, 2, 2] => [4, 0, 2] => [4, 2] => [4, 2, 0, 0]function filterEmpty(a) {    return a.filter(x => x != 0);}array = filterEmpty(array);if (array.length > 0) {    for (var i = 0; i < array.length - 1; i++) {    if (array[i] == array[i + 1]) {        array[i] *= 2;        array[i + 1] = 0;    }    }}array = filterEmpty(array);while (array.length < size) {    array.push(0);}return array;}function slideLeft() {var changed = false;for (var y = 0; y < size; y++) {    var old = Array.from(cells[y]);    cells[y] = slide(cells[y], size);    changed = changed || (cells[y].join(',') != old.join(','));}return changed;}function swap(x1, y1, x2, y2) {var tmp = cells[y1][x1];cells[y1][x1] = cells[y2][x2];cells[y2][x2] = tmp;}function mirror() {for (var y = 0; y < size; y++) {    for (var xLeft = 0, xRight = size - 1; xLeft < xRight; xLeft++, xRight--) {    swap(xLeft, y, xRight, y);    }}}function transpose() {for (var y = 0; y < size; y++) {    for (var x = 0; x < y; x++) {    swap(x, y, y, x);    }}}function moveLeft() {return slideLeft();}function moveRight() {mirror();var changed = moveLeft();mirror();return changed;}function moveUp() {transpose();var changed = moveLeft();transpose();return changed;}function moveDown() {transpose();var changed = moveRight();transpose();return changed;}function isGameOver() {for (var y = 0; y < size; y++) {    for (var x = 0; x < size; x++) {    if (cells[y][x] == 0) {        return false;    }    }}for (var y = 0; y < size - 1; y++) {    for (var x = 0; x < size - 1; x++) {    var c = cells[y][x]    if (c != 0 && (c == cells[y + 1][x] || c == cells[y][x + 1])) {        return false;    }    }}return true;}document.addEventListener('keydown', function(e) {var code = e.keyCode;var ok;switch (code) {    case 40: ok = moveDown(); break;    case 38: ok = moveUp(); break;    case 37: ok = moveLeft(); break;    case 39: ok = moveRight(); break;    default: return;}if (ok) {    generateInEmptyCell();    draw();}if (isGameOver()) {    setTimeout(function() {    alert('Game over');    init();    }, 1000);}});function init() {createField();createCells();new Array(3).fill(0).forEach(generateInEmptyCell);draw();}init();</script>]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>相册</title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[<style>.box {        position: relative;        column-count: 2;        column-gap: 10px;        }img {    width: 100%;    margin-bottom: 10px;}</style><body>    <div class="box">        <img src="/images/highlight/2023-01-21.jpg" alt="">        <img src="/images/highlight/2023-01-22.jpg" alt="">        <img src="/images/highlight/2023-01-22-2.jpg" alt="">        <img src="/images/highlight/2023-01-22-3.jpg" alt="">        <img src="/images/highlight/2023-01-22-4.jpg" alt="">        <img src="/images/highlight/2023-01-22-5.jpg" alt="">    </div></body>]]></content>
     
   </entry>
   
@@ -170,22 +148,22 @@
   
   
   <entry>
-    <title></title>
+    <title>日程</title>
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[{"games":[{"id":"1","date":"2023-03-16","time":"18:21-19:02","place":"jian","players":[],"scores":[],"host":"lhj"},{"id":"2","date":"2023-03-16","time":"18:21-19:02","place":"jian","players":[],"scores":[],"host":"lhj"}]}]]></content>
+    <content type="html"><![CDATA[<style>  .box {    border: 1px solid black;    padding-top: 0vw;    padding-bottom: 0vw;    padding-left: 1vw;    padding-right: 1vw;    display: inline-block;  }</style><div id="countdown" style="text-align: center; margin-bottom: 10px; font-size: 3vw;">    距离五一假期：    <div class="box" style="font-family: monospace;">        <span id="days" style="font-size: 3vw; color: red"></span>    </div>        天    <div class="box" style="font-family: monospace;">        <span id="hours" style="font-size: 3vw; color: red"></span>    </div>    时    <div class="box" style="font-family: monospace;">        <span id="minutes" style="font-size: 3vw; color: red"></span>    </div>    分    <div class="box" style="font-family: monospace;">        <span id="seconds" style="font-size: 3vw; color: red"></span>    </div>    秒</div><script>    var countDownDate = new Date("2023-04-29 08:00:00").getTime();    var x = setInterval(function() {        var now = new Date().getTime();        var distance = countDownDate - now;        var days = Math.floor(distance / (1000 * 60 * 60 * 24));        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));        var seconds = Math.floor((distance % (1000 * 60)) / 1000);        hours = ("0" + hours).slice(-2);        minutes = ("0" + minutes).slice(-2);        seconds = ("0" + seconds).slice(-2);        document.getElementById("days").innerHTML = days;        document.getElementById("hours").innerHTML = hours;        document.getElementById("minutes").innerHTML =minutes;        document.getElementById("seconds").innerHTML = seconds;        if (distance < 0) {            clearInterval(x);            document.getElementById("countdown").innerHTML = "假期开始";        }    }, 1000);</script>   <center><div id="he-plugin-standard"></div></center><script>WIDGET = {  "CONFIG": {    "layout": "2",    "width": 230,    "height": 270,    "background": "1",    "dataColor": "FFFFFF",    "language": "zh",    "city": "CN101240615",    "key": "bdb88e5e2f13400bbd4dda907d00a55f"  }}</script><script src="https://widget.qweather.net/standard/static/js/he-standard-common.js?v=2.0"></script>]]></content>
     
   </entry>
   
   
   
   <entry>
-    <title>日程</title>
+    <title></title>
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[<style>  .box {    border: 1px solid black;    padding-top: 0vw;    padding-bottom: 0vw;    padding-left: 1vw;    padding-right: 1vw;    display: inline-block;  }</style><div id="countdown" style="text-align: center; margin-bottom: 10px; font-size: 3vw;">    距离五一假期：    <div class="box" style="font-family: monospace;">        <span id="days" style="font-size: 3vw; color: red"></span>    </div>        天    <div class="box" style="font-family: monospace;">        <span id="hours" style="font-size: 3vw; color: red"></span>    </div>    时    <div class="box" style="font-family: monospace;">        <span id="minutes" style="font-size: 3vw; color: red"></span>    </div>    分    <div class="box" style="font-family: monospace;">        <span id="seconds" style="font-size: 3vw; color: red"></span>    </div>    秒</div><script>    var countDownDate = new Date("2023-04-29 08:00:00").getTime();    var x = setInterval(function() {        var now = new Date().getTime();        var distance = countDownDate - now;        var days = Math.floor(distance / (1000 * 60 * 60 * 24));        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));        var seconds = Math.floor((distance % (1000 * 60)) / 1000);        hours = ("0" + hours).slice(-2);        minutes = ("0" + minutes).slice(-2);        seconds = ("0" + seconds).slice(-2);        document.getElementById("days").innerHTML = days;        document.getElementById("hours").innerHTML = hours;        document.getElementById("minutes").innerHTML =minutes;        document.getElementById("seconds").innerHTML = seconds;        if (distance < 0) {            clearInterval(x);            document.getElementById("countdown").innerHTML = "假期开始";        }    }, 1000);</script>   <center><div id="he-plugin-standard"></div></center><script>WIDGET = {  "CONFIG": {    "layout": "2",    "width": 230,    "height": 270,    "background": "1",    "dataColor": "FFFFFF",    "language": "zh",    "city": "CN101240615",    "key": "bdb88e5e2f13400bbd4dda907d00a55f"  }}</script><script src="https://widget.qweather.net/standard/static/js/he-standard-common.js?v=2.0"></script>]]></content>
+    <content type="html"><![CDATA[{"games":[{"id":"1","date":"2023-03-16","time":"18:21-19:02","place":"jian","players":[],"scores":[],"host":"lhj"},{"id":"2","date":"2023-03-16","time":"18:21-19:02","place":"jian","players":[],"scores":[],"host":"lhj"}]}]]></content>
     
   </entry>
   
@@ -214,11 +192,33 @@
   
   
   <entry>
+    <title></title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[/* .table {    margin-left: auto;    margin-right: auto;} */]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>计分表</title>
     <link href="/"/>
     <url>/</url>
     
     <content type="html"><![CDATA[<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script><style>.tg  {margin-left:auto;margin-right:auto;}.tg td{border-color:black;border-style:solid;border-width:1px;font-family:monospace;font-size:14px;  overflow:hidden;padding:7px;word-break:normal}.tg th{border-color:black;border-style:solid;border-width:1px;font-family:monospace;font-size:14px;  font-weight:normal;overflow:hidden;padding:7px;word-break:normal}.tg .tg-wa1i{font-weight:bold;text-align:center;vertical-align:middle; padding-left: 20px; padding-right: 20px;}.tg .tg-wa2i{font-weight:bold;text-align:center;vertical-align:middle; padding-left: 10px; padding-right: 10px}</style><table class="tg" id="myTable"><thead>  <tr>    <th class="tg-wa1i" colspan="4">    <button onclick="showDate('dateButton1')" id="dateButton1">日期</button>    </th>  </tr></thead><tbody>  <tr>    <td class="tg-wa1i" colspan="4">    <button onclick="showTimeOnce('timeButton1')" id="timeButton1">开始</button>    -    <button onclick="showTimeRepeat('timeButton2')" id="timeButton2">结束</button>    </td>  </tr>  <tr>    <td class="tg-wa1i" colspan="2" contenteditable="true" width=50%>XXX</td>    <td class="tg-wa2i" colspan="1" contenteditable="true" width=25%>0</td>    <td class="tg-wa2i" colspan="1" rowspan="4" width=25%>    <div class="body">    <button type="button" onclick="add()" class="btn1">＋</button>    <div class="count" >        <span id="demo" class="ft">            0        </span>    </div>    <button type="button" onclick="sub()" class="btn1">－</button>    </div>    </td>  </tr>  <tr>    <td class="tg-wa1i" colspan="2" contenteditable="true">XXX</td>    <td class="tg-wa2i" colspan="1" contenteditable="true">0</td>  </tr>  <tr>    <td class="tg-wa1i" colspan="2" contenteditable="true">XXX</td>    <td class="tg-wa2i" colspan="1" contenteditable="true">0</td>  </tr>  <tr>    <td class="tg-wa1i" colspan="2" contenteditable="true">XXX</td>    <td class="tg-wa2i" colspan="1" contenteditable="true">0</td>  </tr>  <tr>    <td class="tg-wa1i" colspan="4">      <button onclick="getLocationInfo(); this.remove()">获取当前地址</button>      <span id="location"></span>    </td>   </tr> </tbody></table><div align="center" style="margin-top: 10px;"><button onclick="saveTableAsImage()">保存表格为图片</button></div><script>function showDate(buttonId) {  var now = new Date();  var year = now.getFullYear();  var month = (now.getMonth() + 1).toString().padStart(2, '0');  var day = now.getDate().toString().padStart(2, '0');  var dateString = year + '-' + month + '-' + day;  var button = document.getElementById(buttonId);  button.innerHTML = dateString;  button.onclick = null;  button.style.border = 'none';  button.style.cursor = 'default';}function showTimeOnce(buttonId) {  var now = new Date();  var hours = now.getHours().toString().padStart(2, '0');  var minutes = now.getMinutes().toString().padStart(2, '0');  var timeString = hours + ':' + minutes;    var button = document.getElementById(buttonId);  button.innerHTML = timeString;  button.onclick = null;  button.style.border = 'none';  button.style.cursor = 'default';}function showTimeRepeat(buttonId) {  var now = new Date();  var hours = now.getHours().toString().padStart(2, '0');  var minutes = now.getMinutes().toString().padStart(2, '0');  var timeString = hours + ':' + minutes;    var button = document.getElementById(buttonId);  button.innerHTML = timeString;}var counter = document.getElementById("demo").innerHTML;function add() {        counter++;        document.getElementById("demo").innerHTML = counter;}function sub() {    if(counter == 0) {        counter = 0;    } else {        counter--;        document.getElementById("demo").innerHTML = counter;    }}function saveTableAsImage() {  html2canvas(document.querySelector("#myTable")).then(canvas => {    var link = document.createElement("a");    document.body.appendChild(link);    link.download = "table.png";    link.href = canvas.toDataURL();    link.target = '_blank';    link.click();  });}function getLocationInfo() {  fetch('https://ipapi.co/json/')    .then(response => response.json())    .then(data => document.getElementById("location").innerHTML = `${data.country_name}, ${data.region}, ${data.city}`)    .catch(error => console.error(error));}</script>]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>相册</title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[<style>.box {        position: relative;        column-count: 2;        column-gap: 10px;        }img {    width: 100%;    margin-bottom: 10px;}</style><body>    <div class="box">        <img src="/images/highlight/2023-01-21.jpg" alt="">        <img src="/images/highlight/2023-01-22.jpg" alt="">        <img src="/images/highlight/2023-01-22-2.jpg" alt="">        <img src="/images/highlight/2023-01-22-3.jpg" alt="">        <img src="/images/highlight/2023-01-22-4.jpg" alt="">        <img src="/images/highlight/2023-01-22-5.jpg" alt="">    </div></body>]]></content>
     
   </entry>
   
