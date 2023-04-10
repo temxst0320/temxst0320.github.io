@@ -192,6 +192,17 @@
   
   
   <entry>
+    <title>相册</title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[<style>.box {        position: relative;        column-count: 2;        column-gap: 10px;        }img {    width: 100%;    margin-bottom: 10px;}</style><body>    <div class="box">        <img src="/images/highlight/2023-01-21.jpg" alt="">        <img src="/images/highlight/2023-01-22.jpg" alt="">        <img src="/images/highlight/2023-01-22-2.jpg" alt="">        <img src="/images/highlight/2023-01-22-3.jpg" alt="">        <img src="/images/highlight/2023-01-22-4.jpg" alt="">        <img src="/images/highlight/2023-01-22-5.jpg" alt="">    </div></body>]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>日程</title>
     <link href="/"/>
     <url>/</url>
@@ -208,17 +219,6 @@
     <url>/</url>
     
     <content type="html"><![CDATA[<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script><style>.tg  {margin-left:auto;margin-right:auto;}.tg td{border-color:black;border-style:solid;border-width:1px;font-family:monospace;font-size:14px;  overflow:hidden;padding:7px;word-break:normal}.tg th{border-color:black;border-style:solid;border-width:1px;font-family:monospace;font-size:14px;  font-weight:normal;overflow:hidden;padding:7px;word-break:normal}.tg .tg-wa1i{font-weight:bold;text-align:center;vertical-align:middle; padding-left: 20px; padding-right: 20px;}.tg .tg-wa2i{font-weight:bold;text-align:center;vertical-align:middle; padding-left: 10px; padding-right: 10px}</style><table class="tg" id="myTable"><thead>  <tr>    <th class="tg-wa1i" colspan="4">    <button onclick="showDate('dateButton1')" id="dateButton1">日期</button>    </th>  </tr></thead><tbody>  <tr>    <td class="tg-wa1i" colspan="4">    <button onclick="showTimeOnce('timeButton1')" id="timeButton1">开始</button>    -    <button onclick="showTimeRepeat('timeButton2')" id="timeButton2">结束</button>    </td>  </tr>  <tr>    <td class="tg-wa1i" colspan="2" contenteditable="true" width=50%>XXX</td>    <td class="tg-wa2i" colspan="1" contenteditable="true" width=25%>0</td>    <td class="tg-wa2i" colspan="1" rowspan="4" width=25%>    <div class="body">    <button type="button" onclick="add()" class="btn1">＋</button>    <div class="count" >        <span id="demo" class="ft">            0        </span>    </div>    <button type="button" onclick="sub()" class="btn1">－</button>    </div>    </td>  </tr>  <tr>    <td class="tg-wa1i" colspan="2" contenteditable="true">XXX</td>    <td class="tg-wa2i" colspan="1" contenteditable="true">0</td>  </tr>  <tr>    <td class="tg-wa1i" colspan="2" contenteditable="true">XXX</td>    <td class="tg-wa2i" colspan="1" contenteditable="true">0</td>  </tr>  <tr>    <td class="tg-wa1i" colspan="2" contenteditable="true">XXX</td>    <td class="tg-wa2i" colspan="1" contenteditable="true">0</td>  </tr>  <tr>    <td class="tg-wa1i" colspan="4">      <button onclick="getLocationInfo(); this.remove()">获取当前地址</button>      <span id="location"></span>    </td>   </tr> </tbody></table><div align="center" style="margin-top: 10px;"><button onclick="saveTableAsImage()">保存表格为图片</button></div><script>function showDate(buttonId) {  var now = new Date();  var year = now.getFullYear();  var month = (now.getMonth() + 1).toString().padStart(2, '0');  var day = now.getDate().toString().padStart(2, '0');  var dateString = year + '-' + month + '-' + day;  var button = document.getElementById(buttonId);  button.innerHTML = dateString;  button.onclick = null;  button.style.border = 'none';  button.style.cursor = 'default';}function showTimeOnce(buttonId) {  var now = new Date();  var hours = now.getHours().toString().padStart(2, '0');  var minutes = now.getMinutes().toString().padStart(2, '0');  var timeString = hours + ':' + minutes;    var button = document.getElementById(buttonId);  button.innerHTML = timeString;  button.onclick = null;  button.style.border = 'none';  button.style.cursor = 'default';}function showTimeRepeat(buttonId) {  var now = new Date();  var hours = now.getHours().toString().padStart(2, '0');  var minutes = now.getMinutes().toString().padStart(2, '0');  var timeString = hours + ':' + minutes;    var button = document.getElementById(buttonId);  button.innerHTML = timeString;}var counter = document.getElementById("demo").innerHTML;function add() {        counter++;        document.getElementById("demo").innerHTML = counter;}function sub() {    if(counter == 0) {        counter = 0;    } else {        counter--;        document.getElementById("demo").innerHTML = counter;    }}function saveTableAsImage() {  html2canvas(document.querySelector("#myTable")).then(canvas => {    var link = document.createElement("a");    document.body.appendChild(link);    link.download = "table.png";    link.href = canvas.toDataURL();    link.target = '_blank';    link.click();  });}function getLocationInfo() {  fetch('https://ipapi.co/json/')    .then(response => response.json())    .then(data => document.getElementById("location").innerHTML = `${data.country_name}, ${data.region}, ${data.city}`)    .catch(error => console.error(error));}</script>]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>相册</title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[<style>.box {        position: relative;        column-count: 2;        column-gap: 10px;        }img {    width: 100%;    margin-bottom: 10px;}</style><body>    <div class="box">        <img src="/images/highlight/2023-01-21.jpg" alt="">        <img src="/images/highlight/2023-01-22.jpg" alt="">        <img src="/images/highlight/2023-01-22-2.jpg" alt="">        <img src="/images/highlight/2023-01-22-3.jpg" alt="">        <img src="/images/highlight/2023-01-22-4.jpg" alt="">        <img src="/images/highlight/2023-01-22-5.jpg" alt="">    </div></body>]]></content>
     
   </entry>
   
