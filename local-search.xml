@@ -137,44 +137,22 @@
   
   
   <entry>
-    <title>排行榜</title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[<p>时间范围：</p><style>table {text-align:center;width:100%}th {padding:10px}td {padding:7px;border-top:solid 1px;font-family:monospace}img {width:30px;border-radius:50%}</style><script>function sortTable(n) {  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;  table = document.getElementById("leaderboard");  switching = true;  dir = "asc";  while (switching) {    switching = false;    rows = table.rows;    for (i = 1; i < (rows.length - 1); i++) {      shouldSwitch = false;      x = rows[i].getElementsByTagName("td")[n];      y = rows[i + 1].getElementsByTagName("td")[n];      if (dir == "asc") {        if (Number(getValue(x)) > Number(getValue(y))) {          shouldSwitch = true;          break;        }      } else if (dir == "desc") {        if (Number(getValue(x)) < Number(getValue(y))) {          shouldSwitch = true;          break;        }      }    }    if (shouldSwitch) {      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);      switching = true;      switchcount ++;    } else {      if (switchcount == 0 && dir == "asc") {        dir = "desc";        switching = true;      }    }  }}function getValue(cell) {  var value = cell.innerHTML;  var match = value.match(/(-?\d+)/);  if (match) {    return match[1];  } else {    return 0;  }}</script><table id="leaderboard">  <thead>    <tr>      <th>排名</th>      <th>玩家</th>      <th> </th>      <th onclick="sortTable(3)" style="cursor:pointer">总得分⇅</th>      <th onclick="sortTable(4)" style="cursor:pointer">游戏数⇅</th>    </tr>  </thead>  <tbody>    <tr>      <td>🥇</td>      <td><img src="../images/Donald_Trump_NYMA.jpg"></td>      <td><a href="../person1/">辛辛辛</a></td>      <td><span style="color:red">+101</span></td>      <td>13</td>    </tr>    <tr>      <td>🥈</td>      <td><img src="../images/Donald_Trump_NYMA.jpg"></td>      <td><a href="../person1/">己己</a></td>      <td><span style="color:red">+50</span></td>      <td>14</td>    </tr>    <tr>      <td>🥉</td>      <td><img src="../images/Donald_Trump_NYMA.jpg"></td>      <td><a href="../person1/">乙乙乙</a></td>      <td><span style="color:red">+20</span></td>      <td>8</td>    </tr>    <tr>      <td>4</td>      <td><img src="../images/Donald_Trump_NYMA.jpg"></td>      <td><a href="../person1/">丁丁丁</a></td>      <td><span style="color:red">+10</span></td>      <td>7</td>    </tr>    <tr>      <td>5</td>      <td><img src="../images/Donald_Trump_NYMA.jpg"></td>      <td><a href="../person1/">甲甲甲</a></td>      <td><span style="color:green">-20</span></td>      <td>8</td>    </tr>    <tr>      <td>6</td>      <td><img src="../images/Donald_Trump_NYMA.jpg"></td>      <td><a href="../person1/">丙丙</a></td>      <td><span style="color:green">-23</span></td>      <td>12</td>    </tr>    <tr>      <td>7</td>      <td><img src="../images/Donald_Trump_NYMA.jpg"></td>      <td><a href="../person1/">庚庚庚</a></td>      <td><span style="color:green">-66</span></td>      <td>8</td>    </tr>    <tr>      <td>8</td>      <td><img src="../images/Donald_Trump_NYMA.jpg"></td>      <td><a href="../person1/">戊戊戊</a></td>      <td><span style="color:green">-72</span></td>      <td>10</td>    </tr>  </tbody></table>]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title></title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[{"games":[{"id":"1","date":"2023-03-16","time":"18:21-19:02","place":"jian","players":[],"scores":[],"host":"lhj"},{"id":"2","date":"2023-03-16","time":"18:21-19:02","place":"jian","players":[],"scores":[],"host":"lhj"}]}]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title></title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[{"users":[{"id":"1","name":"lhj","img":"/","phone":"12345678901","email":"","account":"","password":""}]}]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>小游戏</title>
     <link href="/"/>
     <url>/</url>
     
     <content type="html"><![CDATA[<!-- [examples/index.html at main · 5minute/examples](https://github.com/5minute/examples/blob/main/2048/index.html) --><style>    #field {    border: 1px solid black;    }    .cell {    border: 1px solid black;    text-align: center;    width: 80px;    height: 80px;    color: white;    }</style><table id="field" align="center"></table><script>var size = 4;var htmlElements;var cells;function createField() {if (htmlElements) {    return;}htmlElements = [];var table = document.getElementById('field');for (var y = 0; y < size; y++) {    var tr = document.createElement('tr');    var trElements = [];    for (var x = 0; x < size; x++) {    var td = document.createElement('td');    td.setAttribute('class', 'cell');    tr.appendChild(td);    trElements.push(td);    }    htmlElements.push(trElements);    table.appendChild(tr);}}function createCells() {cells = [];for (var y = 0; y < size; y++) {    cells.push(new Array(size).fill(0));}}function generateInEmptyCell() {var x, y;do {    x = Math.floor(Math.random() * size), y = Math.floor(Math.random() * size);    if (cells[y][x] == 0) {    cells[y][x] = Math.random() >= 0.9 ? 4 : 2;    break;    }} while (true);}function draw() {for (var y = 0; y < size; y++) {    for (var x = 0; x < size; x++) {    var td = htmlElements[y][x];    var v = cells[y][x];    td.innerHTML = v == 0 ? '' : String(v);    if (v == 0) {        td.setAttribute('style', 'background-color: white');    } else {        var h = 20 + 24 * Math.log2(2048 / v);        td.setAttribute('style', 'background-color: hsl(' + h + ', 100%, 50%)');    }    }}}function slide(array, size) {// [0, 2, 2, 2] => [2, 2, 2] => [4, 0, 2] => [4, 2] => [4, 2, 0, 0]function filterEmpty(a) {    return a.filter(x => x != 0);}array = filterEmpty(array);if (array.length > 0) {    for (var i = 0; i < array.length - 1; i++) {    if (array[i] == array[i + 1]) {        array[i] *= 2;        array[i + 1] = 0;    }    }}array = filterEmpty(array);while (array.length < size) {    array.push(0);}return array;}function slideLeft() {var changed = false;for (var y = 0; y < size; y++) {    var old = Array.from(cells[y]);    cells[y] = slide(cells[y], size);    changed = changed || (cells[y].join(',') != old.join(','));}return changed;}function swap(x1, y1, x2, y2) {var tmp = cells[y1][x1];cells[y1][x1] = cells[y2][x2];cells[y2][x2] = tmp;}function mirror() {for (var y = 0; y < size; y++) {    for (var xLeft = 0, xRight = size - 1; xLeft < xRight; xLeft++, xRight--) {    swap(xLeft, y, xRight, y);    }}}function transpose() {for (var y = 0; y < size; y++) {    for (var x = 0; x < y; x++) {    swap(x, y, y, x);    }}}function moveLeft() {return slideLeft();}function moveRight() {mirror();var changed = moveLeft();mirror();return changed;}function moveUp() {transpose();var changed = moveLeft();transpose();return changed;}function moveDown() {transpose();var changed = moveRight();transpose();return changed;}function isGameOver() {for (var y = 0; y < size; y++) {    for (var x = 0; x < size; x++) {    if (cells[y][x] == 0) {        return false;    }    }}for (var y = 0; y < size - 1; y++) {    for (var x = 0; x < size - 1; x++) {    var c = cells[y][x]    if (c != 0 && (c == cells[y + 1][x] || c == cells[y][x + 1])) {        return false;    }    }}return true;}document.addEventListener('keydown', function(e) {var code = e.keyCode;var ok;switch (code) {    case 40: ok = moveDown(); break;    case 38: ok = moveUp(); break;    case 37: ok = moveLeft(); break;    case 39: ok = moveRight(); break;    default: return;}if (ok) {    generateInEmptyCell();    draw();}if (isGameOver()) {    setTimeout(function() {    alert('Game over');    init();    }, 1000);}});function init() {createField();createCells();new Array(3).fill(0).forEach(generateInEmptyCell);draw();}init();</script>]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>相册</title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[<style>.box {        position: relative;        column-count: 2;        column-gap: 10px;        }img {    width: 100%;    margin-bottom: 10px;}</style><body>    <div class="box">        <img src="/images/highlight/2023-01-21.jpg" alt="">        <img src="/images/highlight/2023-01-22.jpg" alt="">        <img src="/images/highlight/2023-01-22-2.jpg" alt="">        <img src="/images/highlight/2023-01-22-3.jpg" alt="">        <img src="/images/highlight/2023-01-22-4.jpg" alt="">        <img src="/images/highlight/2023-01-22-5.jpg" alt="">    </div></body>]]></content>
     
   </entry>
   
@@ -192,6 +170,17 @@
   
   
   <entry>
+    <title></title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[{"games":[{"id":"1","date":"2023-03-16","time":"18:21-19:02","place":"jian","players":[],"scores":[],"host":"lhj"},{"id":"2","date":"2023-03-16","time":"18:21-19:02","place":"jian","players":[],"scores":[],"host":"lhj"}]}]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>日程</title>
     <link href="/"/>
     <url>/</url>
@@ -203,11 +192,22 @@
   
   
   <entry>
-    <title>相册</title>
+    <title>排行榜</title>
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[<style>.box {        position: relative;        column-count: 2;        column-gap: 10px;        }img {    width: 100%;    margin-bottom: 10px;}</style><body>    <div class="box">        <img src="/images/highlight/2023-01-21.jpg" alt="">        <img src="/images/highlight/2023-01-22.jpg" alt="">        <img src="/images/highlight/2023-01-22-2.jpg" alt="">        <img src="/images/highlight/2023-01-22-3.jpg" alt="">        <img src="/images/highlight/2023-01-22-4.jpg" alt="">        <img src="/images/highlight/2023-01-22-5.jpg" alt="">    </div></body>]]></content>
+    <content type="html"><![CDATA[<p>时间范围：</p><style>table {text-align:center;width:100%}th {padding:10px}td {padding:7px;border-top:solid 1px;font-family:monospace}img {width:30px;border-radius:50%}</style><script>function sortTable(n) {  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;  table = document.getElementById("leaderboard");  switching = true;  dir = "asc";  while (switching) {    switching = false;    rows = table.rows;    for (i = 1; i < (rows.length - 1); i++) {      shouldSwitch = false;      x = rows[i].getElementsByTagName("td")[n];      y = rows[i + 1].getElementsByTagName("td")[n];      if (dir == "asc") {        if (Number(getValue(x)) > Number(getValue(y))) {          shouldSwitch = true;          break;        }      } else if (dir == "desc") {        if (Number(getValue(x)) < Number(getValue(y))) {          shouldSwitch = true;          break;        }      }    }    if (shouldSwitch) {      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);      switching = true;      switchcount ++;    } else {      if (switchcount == 0 && dir == "asc") {        dir = "desc";        switching = true;      }    }  }}function getValue(cell) {  var value = cell.innerHTML;  var match = value.match(/(-?\d+)/);  if (match) {    return match[1];  } else {    return 0;  }}</script><table id="leaderboard">  <thead>    <tr>      <th>排名</th>      <th>玩家</th>      <th> </th>      <th onclick="sortTable(3)" style="cursor:pointer">总得分⇅</th>      <th onclick="sortTable(4)" style="cursor:pointer">游戏数⇅</th>    </tr>  </thead>  <tbody>    <tr>      <td>🥇</td>      <td><img src="../images/Donald_Trump_NYMA.jpg"></td>      <td><a href="../person1/">辛辛辛</a></td>      <td><span style="color:red">+101</span></td>      <td>13</td>    </tr>    <tr>      <td>🥈</td>      <td><img src="../images/Donald_Trump_NYMA.jpg"></td>      <td><a href="../person1/">己己</a></td>      <td><span style="color:red">+50</span></td>      <td>14</td>    </tr>    <tr>      <td>🥉</td>      <td><img src="../images/Donald_Trump_NYMA.jpg"></td>      <td><a href="../person1/">乙乙乙</a></td>      <td><span style="color:red">+20</span></td>      <td>8</td>    </tr>    <tr>      <td>4</td>      <td><img src="../images/Donald_Trump_NYMA.jpg"></td>      <td><a href="../person1/">丁丁丁</a></td>      <td><span style="color:red">+10</span></td>      <td>7</td>    </tr>    <tr>      <td>5</td>      <td><img src="../images/Donald_Trump_NYMA.jpg"></td>      <td><a href="../person1/">甲甲甲</a></td>      <td><span style="color:green">-20</span></td>      <td>8</td>    </tr>    <tr>      <td>6</td>      <td><img src="../images/Donald_Trump_NYMA.jpg"></td>      <td><a href="../person1/">丙丙</a></td>      <td><span style="color:green">-23</span></td>      <td>12</td>    </tr>    <tr>      <td>7</td>      <td><img src="../images/Donald_Trump_NYMA.jpg"></td>      <td><a href="../person1/">庚庚庚</a></td>      <td><span style="color:green">-66</span></td>      <td>8</td>    </tr>    <tr>      <td>8</td>      <td><img src="../images/Donald_Trump_NYMA.jpg"></td>      <td><a href="../person1/">戊戊戊</a></td>      <td><span style="color:green">-72</span></td>      <td>10</td>    </tr>  </tbody></table>]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[{"users":[{"id":"1","name":"lhj","img":"/","phone":"12345678901","email":"","account":"","password":""}]}]]></content>
     
   </entry>
   
